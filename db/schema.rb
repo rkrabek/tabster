@@ -11,12 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150628191553) do
+ActiveRecord::Schema.define(version: 20150628193618) do
 
   create_table "creditors", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "creditors_debtors", force: :cascade do |t|
+    t.integer "creditor_id"
+    t.integer "debtor_id"
   end
 
   create_table "debtors", force: :cascade do |t|
