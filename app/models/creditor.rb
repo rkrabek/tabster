@@ -1,0 +1,3 @@
+class Creditor < ActiveRecord::Base
+  validates :name, presence: true
+end
