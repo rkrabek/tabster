@@ -9,7 +9,7 @@ class CreditorsController < ApplicationController
 	end
 
 	def create
-		@creditor = Creditor.new(post_params)
+		@creditor = Creditor.new(creditor_params)
 		if @creditor.save
 			redirect_to @creditor
 		else
