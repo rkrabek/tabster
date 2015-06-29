@@ -1,0 +1,9 @@
+<h1><%= @user.name %></h1>
+
+<h2>Current debts:</h2>
+<%= render @user.debts %>
+
+<h2>Add a debt:</h2>
+<%= render 'debts/form' %>
+
+<%= link_to 'Back', users_path %>

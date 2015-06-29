@@ -1,7 +1,0 @@
-<%= link_to "New Creditor", new_creditor_path %>
-
-<ul>
-<% @creditors.each do |creditor| %>
-	<li><%= link_to creditor.name, creditor_path(creditor) %></li>
-	<% end %>
-</ul>

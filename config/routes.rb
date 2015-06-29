@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :creditors
+  resources :users do
+    resources :debts
+  end
   
-  root 'creditors#index'
+  root 'users#index'
 end

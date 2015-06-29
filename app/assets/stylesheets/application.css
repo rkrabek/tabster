@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>TABSTER</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<style>
-    body {
-      text-align: center;
-      background: url("https://36.media.tumblr.com/tumblr_ma68gfe62v1re3d5zo1_500.jpg");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: helvetica;
-    }
-    p {
-        text-align: center;
-    }
-  </style>
+body {
+  text-align: center;
+  background: url("https://36.media.tumblr.com/tumblr_ma68gfe62v1re3d5zo1_500.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: helvetica;
+}
+p {
+    text-align: center;
+}
+
+  

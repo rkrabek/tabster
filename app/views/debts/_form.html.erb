@@ -1,0 +1,15 @@
+<%= form_for([@user, @user.debts.build]) do |f| %>
+	<div>
+	<%= f.label :debtor_id %>
+	<%= f.text_field :debtor_id %>
+	</div>
+	<div>
+	<%= f.label :amount %>
+	<%= f.text_field :amount %>
+	</div>
+	<div>
+	<%= f.label :description %>
+	<%= f.text_field :description %>
+	</div>
+	<%= f.submit %>
+<% end %>
